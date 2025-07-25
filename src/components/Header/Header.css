@@ -101,3 +101,32 @@
     display: block;
   }
 }
+
+@media (max-width: 425px) {
+  .custom-header .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .header-left .logo {
+    font-size: 1.2rem;
+  }
+
+  .header-center {
+    display: none !important;
+  }
+
+  .header-right {
+    gap: 1rem;
+  }
+
+  .burger-btn {
+    width: 24px;
+    height: 24px;
+    gap: 3px;
+  }
+
+  .burger-btn span {
+    background-color: var(--text-primary);
+  }
+}

@@ -10,8 +10,18 @@
   font-weight: bolder;
   cursor: pointer;
   transition: color 0.2s;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: center;
 }
 
 .custom-footer p:hover {
   color: var(--bg-btn);
+}
+
+@media (max-width: 425px) {
+  .custom-footer p {
+    font-size: 13px;
+    padding: 0 10px;
+  }
 }

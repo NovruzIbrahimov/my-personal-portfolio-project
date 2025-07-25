@@ -102,3 +102,57 @@
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
+
+@media (max-width: 425px) {
+  .home-page {
+    padding: 40px 15px;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .intro-text h1.greeting {
+    font-size: 1.5rem;
+  }
+
+  .intro-text h2.title {
+    font-size: 1.2rem;
+  }
+
+  .intro-text .subtitle {
+    font-size: 0.95rem;
+    margin-top: 8px;
+  }
+
+  .btn-group {
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .cv-btn,
+  .contact-btn {
+    min-width: 120px;
+    max-width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: clamp(0.75rem, 2.5vw, 0.95rem);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .gif-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .gif-img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+  }
+}
