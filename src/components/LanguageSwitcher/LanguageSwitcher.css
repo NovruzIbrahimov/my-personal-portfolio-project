@@ -1,0 +1,53 @@
+.lang-switcher-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.globe-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.globe-btn:hover{
+  color: var(--bg-btn);
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 6px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  padding: 6px 0;
+}
+
+.lang-dropdown li {
+  padding: 6px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+  color: #222;
+}
+
+.lang-dropdown li:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.flag-img {
+  width: 20px;
+  height: 14px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border-radius: 2px;
+}

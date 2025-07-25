@@ -1,0 +1,150 @@
+import React, { useState } from "react";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+import "./Projects.css";
+import { Modal, Button } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
+
+// const projectData = [
+//   {
+//     id: 1,
+//     title: "Furniture Ecommerce",
+//     description: t("projects.description-one"),
+//     image: "src/assets/images/furniture.png",
+//     live: "https://example.com",
+//     github: "https://github.com/username/portfolio",
+//   },
+//   {
+//     id: 2,
+//     title: "Book Ecommerce",
+//     description: t("projects.description-two"),
+//     image: "src/assets/images/book.png",
+//     live: "#",
+//     github: "#",
+//   },
+//   {
+//     id: 3,
+//     title: "Portfolio",
+//     description: t("projects.description-three"),
+//     image: "src/assets/images/portfolio.png",
+//     live: "#",
+//     github: "#",
+//   },
+// ];
+
+function Projects() {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+  const { t } = useTranslation();
+
+  const projectData = [
+  {
+    id: 1,
+    title: "Furniture Ecommerce",
+    description: t("projects.description-one"),
+    image: "src/assets/images/furniture.png",
+    live: "https://example.com",
+    github: "https://github.com/username/portfolio",
+  },
+  {
+    id: 2,
+    title: "Book Ecommerce",
+    description: t("projects.description-two"),
+    image: "src/assets/images/book.png",
+    live: "#",
+    github: "#",
+  },
+  {
+    id: 3,
+    title: "Portfolio",
+    description: t("projects.description-three"),
+    image: "src/assets/images/portfolio.png",
+    live: "#",
+    github: "#",
+  },
+];
+
+  const handleOpenModal = (project) => {
+    setSelectedProject(project);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+    setShowModal(false);
+  };
+
+  return (
+    <div className="projects container py-5">
+      <motion.h2
+        className="text-center mb-4"
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        {t("projects.projects")}
+      </motion.h2>
+
+      <div className="row">
+        {projectData.map((project, index) => (
+          <motion.div
+            className="col-md-6 col-lg-4 mb-4"
+            key={project.id}
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.2, duration: 0.6 }}
+          >
+            <div
+              className="project-card"
+              onClick={() => handleOpenModal(project)}
+            >
+              <img src={project.image} alt={project.title} />
+              <div className="card-body">
+                <h5>{project.title}</h5>
+                <p>{project.description}</p>
+                <span className="see-more">{t("projects.see-more")} →</span>
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Modal */}
+      <Modal show={showModal} onHide={handleCloseModal} centered>
+        {selectedProject && (
+          <>
+            <Modal.Header closeButton>
+              <Modal.Title>{selectedProject.title}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <img
+                src={selectedProject.image}
+                alt={selectedProject.title}
+                className="img-fluid rounded mb-3"
+              />
+              <p>{selectedProject.description}</p>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button
+                variant="primary"
+                href={selectedProject.live}
+                target="_blank"
+              >
+                {t("projects.modal-preview")}
+              </Button>
+              <Button
+                variant="dark"
+                href={selectedProject.github}
+                target="_blank"
+              >
+                GitHub
+              </Button>
+            </Modal.Footer>
+          </>
+        )}
+      </Modal>
+    </div>
+  );
+}
+
+export default Projects;

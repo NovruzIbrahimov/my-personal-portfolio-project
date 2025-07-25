@@ -1,0 +1,52 @@
+{
+  "header": {
+    "home": "Ana Səhifə",
+    "about": "Haqqımda",
+    "projects": "Layihələr",
+    "contact": "Əlaqə"
+  },
+  "home": {
+    "greeting": "Salam, mən",
+    "title": "Frontend Proqramçı",
+    "subtitle": "Mən responsiv və istifadəçi yönümlü veb təcrübələri yaradan, yaradıcı və dəqiq çalışan bir frontend inkişaf etdiricisiyəm.",
+    "download": "CV-ni Yüklə",
+    "contact": "Mənimlə Əlaqə"
+  },
+  "about": {
+    "about": "Mən Kiməm?",
+    "intro-text-one": "Salam! Mən",
+    "intro-text-two": "Azərbaycanlı ehtiraslı bir frontend proqramçısıyam. Müasir texnologiyalardan istifadə edərək təmiz, interaktiv və cavabverən veb tətbiqlər hazırlamağı sevirəm.",
+    "intro-text-second": "Proqramlaşdırma yolçuluğum maraqla başladı və zamanla əsl həvəsə çevrildi. Problemləri həll etməyi, yeni framework-ləri öyrənməyi və yaradıcı UI/UX dizaynlar üzərində işləməyi çox sevirəm.",
+    "intro-text-third-one": "Fokuslandığım sahələr",
+    "intro-text-third-two": "cavabverən tərtibatlar və performans optimallaşdırılmasıdır.",
+    "skills": "Bacarıqlarım",
+    "education": "Təhsil",
+    "university": "Azərbaycan Dövlət Neft Akademiyası",
+    "specialty": "Elektroenergetika Mühəndisliyi",
+    "academy": "Garage Academy",
+    "specialty-two": "Frontend Development",
+    "experience": "İş Təcrübəsi"
+  },
+  "projects": {
+    "projects": "Layihələrim",
+    "description-one": "Bu e-ticarət saytı React və Bootstrap ilə hazırlanıb.",
+    "description-two": "Səbət və ödəniş axını olan tam funksiyalı e-ticarət platforması.",
+    "description-three": "Bacarıqlarımı nümayiş etdirən təmiz və funksional portfolio.",
+    "see-more": "Daha Çox",
+    "modal-preview": "Canlı Baxış"
+  },
+  "contact": {
+    "contact": "Mənimlə Əlaqə",
+    "form-name": "Adınız",
+    "form-email": "E-poçt Ünvanınız",
+    "form-message": "Mesajınız",
+    "send-button": "Mesajı Göndər",
+    "error-name": "Zəhmət olmasa, adınızı daxil edin",
+    "error-email": "Zəhmət olmasa, e-mail ünvanınızı daxil edin",
+    "error-message": "Zəhmət olmasa, mesajınızı daxil edin",
+    "map": "Bakı, Azərbaycan"
+  },
+  "footer": {
+    "footer": "Bütün hüquqlar qorunur."
+  }
+}

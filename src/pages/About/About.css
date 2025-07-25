@@ -1,0 +1,106 @@
+.about {
+  color: var(--text-primary);
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+.intro-text-second {
+  font-weight: 600;
+}
+
+.intro-text-third {
+  font-weight: 600;
+}
+
+.about-img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.skills h3 {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.skill-area p {
+  font-weight: bolder;
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.skill-icon.html {
+  color: #e34c26;
+}
+.skill-icon.css {
+  color: #264de4;
+}
+.skill-icon.js {
+  color: #f0db4f;
+}
+.skill-icon.react {
+  color: #61dafb;
+}
+.skill-icon.git {
+  color: #f1502f;
+}
+.skill-icon.bootstrap {
+  color: #712cf9;
+}
+
+.education h3 {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.experience h3 {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.company-name {
+  color: var(--bg-btn);
+  font-weight: bold;
+}
+
+.job-title {
+  font-weight: 600;
+}
+
+.date-range {
+  color: #e17055;
+  font-weight: 500;
+}
+
+.strong-text {
+  color: var(--bg-btn);
+  font-weight: bold;
+}
+
+.prefix-text {
+  font-weight: 600;
+}
+
+.date-range {
+  color: #e17055;
+  font-weight: 500;
+}

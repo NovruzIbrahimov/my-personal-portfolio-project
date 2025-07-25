@@ -1,0 +1,52 @@
+{
+  "header": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  },
+  "home": {
+    "greeting": "Merhaba, ben",
+    "title": "Frontend Geliştirici",
+    "subtitle": "Yaratıcı ve titizlikle kullanıcı dostu, duyarlı web deneyimleri tasarlayan bir frontend geliştiricisiyim.",
+    "download": "CV'yi İndir",
+    "contact": "Benimle İletişime Geç"
+  },
+  "about": {
+    "about": "Ben Kimim?",
+    "intro-text-one": "Merhaba! Ben",
+    "intro-text-two": "Azerbaycan'dan tutkulu bir frontend geliştiricisiyim. Modern teknolojiler kullanarak temiz, etkileşimli ve duyarlı web uygulamaları oluşturmayı seviyorum.",
+    "intro-text-second": "Yazılım yolculuğum merakla başladı ve zamanla gerçek bir tutkuya dönüştü. Sorun çözmeyi, yeni çerçeveler öğrenmeyi ve yaratıcı UI/UX tasarımlarıyla çalışmayı seviyorum.",
+    "intro-text-third-one": "Odaklandığım alanlar",
+    "intro-text-third-two": "duyarlı tasarımlar ve performans optimizasyonudur.",
+    "skills": "Yeteneklerim",
+    "education": "Eğitim",
+    "university": "Azerbaycan Devlet Petrol Akademisi",
+    "specialty": "Elektrik Mühendisliği",
+    "academy": "Garage Akademi",
+    "specialty-two": "Frontend Geliştirme",
+    "experience": "Deneyim"
+  },
+  "projects": {
+    "projects": "Projelerim",
+    "description-one": "Bu e-ticaret sitesi React ve Bootstrap ile yapılmıştır.",
+    "description-two": "Sepet ve ödeme akışı olan tam kapsamlı bir e-ticaret sitesi.",
+    "description-three": "Yeteneklerimi sergileyen temiz ve işlevsel bir portfolyo.",
+    "see-more": "Daha fazlasını gör",
+    "modal-preview": "Canlı Önizleme"
+  },
+  "contact": {
+    "contact": "Benimle İletişime Geç",
+    "form-name": "Adınız",
+    "form-email": "E-postanız",
+    "form-message": "Mesajınız",
+    "send-button": "Mesaj Gönder",
+    "error-name": "Lütfen adınızı girin",
+    "error-email": "Lütfen e-posta adresinizi girin",
+    "error-message": "Lütfen mesajınızı girin",
+    "map": "Bakü, Azerbaycan"
+  },
+  "footer": {
+    "footer": "Tüm hakları saklıdır."
+  }
+}

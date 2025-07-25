@@ -1,0 +1,52 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hi, I'm",
+    "title": "Frontend Developer",
+    "subtitle": "I am a frontend developer dedicated to crafting responsive, user-friendly web experiences with creativity and precision.",
+    "download": "Download CV",
+    "contact": "Contact Me"
+  },
+  "about": {
+    "about": "Who Am I?",
+    "intro-text-one": "Hello! I'm",
+    "intro-text-two": "a passionate frontend developer from Azerbaijan. I love building clean, interactive, and responsive web applications using modern technologies.",
+    "intro-text-second": "My journey in programming started from curiosity and grew into areal passion. I enjoy solving problems, learning new frameworks, and working on creative UI/UX designs.",
+    "intro-text-third-one": "My focus areas are",
+    "intro-text-third-two": "responsive layouts, and performance optimization.",
+    "skills": "My Skills",
+    "education": "Education",
+    "university": "Azerbaijan State Oil Academy",
+    "specialty": "Electrical Engineering",
+    "academy": "Garage Academy",
+    "specialty-two": "Frontend Development",
+    "experience": "Experience"
+  },
+  "projects": {
+    "projects": "My Projects",
+    "description-one": "This Ecommerce built with React and Bootstrap.",
+    "description-two": "A full-stack e-commerce site with cart & payment flow.",
+    "description-three": "A clean and functional portfolio showcasing my skills.",
+    "see-more": "See more",
+    "modal-preview": "Live Preview"
+  },
+  "contact": {
+    "contact": "Contact Me",
+    "form-name": "Your Name",
+    "form-email": "Your Email",
+    "form-message": "Your Message",
+    "send-button": "Send Message",
+    "error-name": "Please enter your name",
+    "error-email": "Please enter your email",
+    "error-message": "Please enter your message",
+    "map": "Baku, Azerbaijan"
+  },
+  "footer": {
+    "footer": "All rights reserved."
+  }
+}

@@ -1,0 +1,17 @@
+.custom-footer {
+  background-color: var(--bg-header);
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.custom-footer p {
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.custom-footer p:hover {
+  color: var(--bg-btn);
+}
