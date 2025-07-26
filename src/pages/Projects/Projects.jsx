@@ -4,33 +4,9 @@ import { motion } from "framer-motion";
 import "./Projects.css";
 import { Modal, Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-
-// const projectData = [
-//   {
-//     id: 1,
-//     title: "Furniture Ecommerce",
-//     description: t("projects.description-one"),
-//     image: "src/assets/images/furniture.png",
-//     live: "https://example.com",
-//     github: "https://github.com/username/portfolio",
-//   },
-//   {
-//     id: 2,
-//     title: "Book Ecommerce",
-//     description: t("projects.description-two"),
-//     image: "src/assets/images/book.png",
-//     live: "#",
-//     github: "#",
-//   },
-//   {
-//     id: 3,
-//     title: "Portfolio",
-//     description: t("projects.description-three"),
-//     image: "src/assets/images/portfolio.png",
-//     live: "#",
-//     github: "#",
-//   },
-// ];
+import furnitureImg from "../../assets/images/furniture.png";
+import bookImg from "../../assets/images/book.png";
+import portfolioImg from "../../assets/images/portfolio.png";
 
 function Projects() {
   const [showModal, setShowModal] = useState(false);
@@ -38,31 +14,31 @@ function Projects() {
   const { t } = useTranslation();
 
   const projectData = [
-  {
-    id: 1,
-    title: "Furniture Ecommerce",
-    description: t("projects.description-one"),
-    image: "src/assets/images/furniture.png",
-    live: "https://example.com",
-    github: "https://github.com/username/portfolio",
-  },
-  {
-    id: 2,
-    title: "Book Ecommerce",
-    description: t("projects.description-two"),
-    image: "src/assets/images/book.png",
-    live: "#",
-    github: "#",
-  },
-  {
-    id: 3,
-    title: "Portfolio",
-    description: t("projects.description-three"),
-    image: "src/assets/images/portfolio.png",
-    live: "#",
-    github: "#",
-  },
-];
+    {
+      id: 1,
+      title: "Furniture Ecommerce",
+      description: t("projects.description-one"),
+      image: furnitureImg,
+      live: "https://example.com",
+      github: "https://github.com/NovruzIbrahimov/Furniture_ecommerce_project.git",
+    },
+    {
+      id: 2,
+      title: "Book Ecommerce",
+      description: t("projects.description-two"),
+      image: bookImg,
+      live: "#",
+      github: "https://github.com/NovruzIbrahimov/MyBook-Ecommerce.git",
+    },
+    {
+      id: 3,
+      title: "Portfolio",
+      description: t("projects.description-three"),
+      image: portfolioImg,
+      live: "#",
+      github: "https://github.com/NovruzIbrahimov/My-Portfolio.git",
+    },
+  ];
 
   const handleOpenModal = (project) => {
     setSelectedProject(project);

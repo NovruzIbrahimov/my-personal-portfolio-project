@@ -121,6 +121,7 @@
   }
 
   .burger-btn {
+    display: flex;
     width: 24px;
     height: 24px;
     gap: 3px;
