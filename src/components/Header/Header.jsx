@@ -61,7 +61,7 @@ function Header() {
             {t("header.contact")}
           </Link>
         </nav>
-        <div className="header-right d-flex align-items-center gap-3">
+        <div className="header-right d-flex align-items-center">
           <LanguageSwitcher />
           <ThemeToggle />
           <button

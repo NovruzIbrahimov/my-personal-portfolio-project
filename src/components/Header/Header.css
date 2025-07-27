@@ -53,6 +53,12 @@
   transform: scaleX(1);
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .burger-btn {
   display: none;
   flex-direction: column;
@@ -79,7 +85,6 @@
   margin: 6px 0;
 }
 
-/* Animasiya – open olduqda çevrilmə */
 .burger-btn.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -93,12 +98,15 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-@media (max-width: 1024px) {
-  .header-center {
-    display: none;
+@media (max-width: 768px) {
+  .header-center .nav-link {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    gap: 1rem;
   }
-  .header-right .burger-btn {
-    display: block;
+
+  .header-center {
+    gap: 1rem;
   }
 }
 
@@ -117,11 +125,11 @@
   }
 
   .header-right {
-    gap: 1rem;
+    gap: 0.3rem;
   }
 
   .burger-btn {
-    display: flex;
+    display: block;
     width: 24px;
     height: 24px;
     gap: 3px;
@@ -129,5 +137,14 @@
 
   .burger-btn span {
     background-color: var(--text-primary);
+  }
+}
+
+@media (max-width: 393px) {
+  .burger-btn {
+    display: block;
+    width: 24px;
+    height: 24px;
+    gap: 3px;
   }
 }

@@ -12,7 +12,7 @@
   transition: color 0.2s;
 }
 
-.globe-btn:hover{
+.globe-btn:hover {
   color: var(--bg-btn);
 }
 
