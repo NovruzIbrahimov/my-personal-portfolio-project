@@ -5,6 +5,9 @@
     "projects": "Projeler",
     "contact": "İletişim"
   },
+  "sidebar": {
+    "button": "CV'yi İndir"
+  },
   "home": {
     "greeting": "Merhaba, ben",
     "title": "Frontend Geliştirici",
@@ -15,10 +18,10 @@
   "about": {
     "about": "Ben Kimim?",
     "intro-text-one": "Merhaba! Ben",
-    "intro-text-two": "Azerbaycan'dan tutkulu bir frontend geliştiricisiyim. Modern teknolojiler kullanarak temiz, etkileşimli ve duyarlı web uygulamaları oluşturmayı seviyorum.",
-    "intro-text-second": "Yazılım yolculuğum merakla başladı ve zamanla gerçek bir tutkuya dönüştü. Sorun çözmeyi, yeni çerçeveler öğrenmeyi ve yaratıcı UI/UX tasarımlarıyla çalışmayı seviyorum.",
+    "intro-text-two": "Azerbaycan'dan yetenekli bir frontend geliştiricisiyim. Modern teknolojileri kullanarak kullanıcı dostu, verimli ve sürdürülebilir web uygulamaları geliştiriyorum.",
+    "intro-text-second": "Yazılım yolculuğum merakla başladı ve zamanla güçlü bir profesyonel ilgiye dönüştü. Gerçek dünya problemlerini çözmeyi, yeni teknolojiler öğrenmeyi ve yapılandırılmış UI/UX geliştirme üzerinde çalışmayı seviyorum.",
     "intro-text-third-one": "Odaklandığım alanlar",
-    "intro-text-third-two": "duyarlı tasarımlar ve performans optimizasyonudur.",
+    "intro-text-third-two": "duyarlı tasarım ve performans optimizasyonudur.",
     "skills": "Yeteneklerim",
     "education": "Eğitim",
     "university": "Azerbaycan Devlet Petrol Akademisi",

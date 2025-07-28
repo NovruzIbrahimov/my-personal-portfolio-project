@@ -25,7 +25,7 @@ body.sidebar-open .sidebar {
   transition: background 0.6s;
 }
 
-.sidebar .nav-link::after {
+/* .sidebar .nav-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -48,4 +48,32 @@ body.sidebar-open .sidebar {
 
 .sidebar .nav-link:hover {
   background-color: rgba(0, 0, 0, 0.05);
+} */
+
+.datetime-box {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.calendar-box,
+.clock-box {
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+
+.download-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background-color: var(--bg-btn);
+  color: white;
+}
+
+.download-btn:hover {
+  background-color: #0056c7;
+  transform: scale(1.05);
 }

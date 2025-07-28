@@ -4,8 +4,8 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import "./Home.css";
 import heroImg from "../../assets/images/myphoto.jpg";
-import frontendGif from "../../assets/animations/home.gif";
-import frontendGif1 from "../../assets/animations/home1.gif";
+import frontendGif from "../../assets/animations/homee1.gif";
+import frontendGif1 from "../../assets/animations/homee.gif";
 import frontendGif2 from "../../assets/animations/home2.gif";
 import { FaDownload } from "react-icons/fa";
 

@@ -7,6 +7,17 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.header-left {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-left:hover .logo {
+  color: var(--bg-btn);
+}
+
+
+
 .header-left .logo {
   font-size: 1.5rem;
   font-weight: bold;

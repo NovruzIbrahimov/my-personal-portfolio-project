@@ -5,6 +5,9 @@
     "projects": "Layihələr",
     "contact": "Əlaqə"
   },
+  "sidebar": {
+    "button": "CV-ni Yüklə"
+  },
   "home": {
     "greeting": "Salam, mən",
     "title": "Frontend Proqramçı",
@@ -15,10 +18,10 @@
   "about": {
     "about": "Mən Kiməm?",
     "intro-text-one": "Salam! Mən",
-    "intro-text-two": "Azərbaycanlı ehtiraslı bir frontend proqramçısıyam. Müasir texnologiyalardan istifadə edərək təmiz, interaktiv və cavabverən veb tətbiqlər hazırlamağı sevirəm.",
-    "intro-text-second": "Proqramlaşdırma yolçuluğum maraqla başladı və zamanla əsl həvəsə çevrildi. Problemləri həll etməyi, yeni framework-ləri öyrənməyi və yaradıcı UI/UX dizaynlar üzərində işləməyi çox sevirəm.",
+    "intro-text-two": "Azərbaycanlı təcrübəli frontend proqramçısıyam. Müasir texnologiyalardan istifadə edərək istifadəsi rahat, səmərəli və asan idarə olunan veb tətbiqlər hazırlayıram.",
+    "intro-text-second": "Proqramlaşdırma sahəsində yolum maraqla başladı və zamanla peşəkar bir istiqamətə çevrildi. Real problemlərin həllindən, yeni texnologiyaları öyrənməkdən və strukturlaşdırılmış UI/UX dizaynları üzərində işləməkdən zövq alıram.",
     "intro-text-third-one": "Fokuslandığım sahələr",
-    "intro-text-third-two": "cavabverən tərtibatlar və performans optimallaşdırılmasıdır.",
+    "intro-text-third-two": "adaptiv dizayn və performansın optimallaşdırılmasıdır.",
     "skills": "Bacarıqlarım",
     "education": "Təhsil",
     "university": "Azərbaycan Dövlət Neft Akademiyası",

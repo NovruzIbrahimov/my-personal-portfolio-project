@@ -44,9 +44,9 @@ function Header() {
   return (
     <header className={`custom-header ${theme}`}>
       <div className="container d-flex justify-content-between align-items-center py-2">
-        <div className="header-left">
-          <h1 className="logo m-0">Novruz.dev</h1>
-        </div>
+        <Link to="/" className="header-left m-0">
+          <h1 className="logo m-0">İbrahimov.dev</h1>
+        </Link>
         <nav className="header-center">
           <Link to="/" className="nav-link">
             {t("header.home")}

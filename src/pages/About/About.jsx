@@ -50,7 +50,8 @@ function About() {
           />
         </div>
       </motion.div>
-
+      
+      {/* Bacarıqlar */}
       <motion.div
         className="skills"
         initial={{ opacity: 0, y: 20 }}
