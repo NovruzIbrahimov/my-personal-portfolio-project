@@ -21,14 +21,16 @@ function Contact() {
     message: "",
   });
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     setErrors({ ...errors, [e.target.name]: "" });
   };
 
-  const handleSubmit = (e) => {
+ const handleSubmit = async (e) => {
     e.preventDefault();
+
     let newErrors = {};
     if (!formData.name) newErrors.name = t("contact.error-name");
     if (!formData.email) newErrors.email = t("contact.error-email");
@@ -36,8 +38,32 @@ function Contact() {
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-    } else {
-      console.log("Form data:", formData);
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://formspree.io/f/xpwllwya", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert(t("contact.success-message"));
+        setFormData({ name: "", email: "", message: "" }); 
+      } else {
+        alert(t("contact.error-submit"));
+      }
+    } catch (error) {
+      alert(t("contact.error-submit"));
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -107,7 +133,7 @@ function Contact() {
             {errors.message && (
               <span className="text-danger">{errors.message}</span>
             )}
-            <button type="submit">{t("contact.send-button")}</button>
+            <button type="submit" disabled={isSubmitting}>{isSubmitting ? t("contact.send-button") + "..." : t("contact.send-button")}</button>
           </form>
         </motion.div>
 

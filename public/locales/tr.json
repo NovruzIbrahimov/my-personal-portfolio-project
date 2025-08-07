@@ -47,7 +47,9 @@
     "error-name": "Lütfen adınızı girin",
     "error-email": "Lütfen e-posta adresinizi girin",
     "error-message": "Lütfen mesajınızı girin",
-    "map": "Bakü, Azerbaycan"
+    "map": "Bakü, Azerbaycan",
+    "success-message": "Mesajınız başarıyla gönderildi!",
+    "error-submit": "Form gönderilirken bir sorun oluştu. Lütfen tekrar deneyin."
   },
   "footer": {
     "footer": "Tüm hakları saklıdır."

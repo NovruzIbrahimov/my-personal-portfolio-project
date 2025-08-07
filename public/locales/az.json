@@ -47,7 +47,9 @@
     "error-name": "Zəhmət olmasa, adınızı daxil edin",
     "error-email": "Zəhmət olmasa, e-mail ünvanınızı daxil edin",
     "error-message": "Zəhmət olmasa, mesajınızı daxil edin",
-    "map": "Bakı, Azərbaycan"
+    "map": "Bakı, Azərbaycan",
+    "success-message": "Mesajınız uğurla göndərildi!",
+    "error-submit": "Formanı göndərərkən problem yarandı. Zəhmət olmasa, yenidən cəhd edin."
   },
   "footer": {
     "footer": "Bütün hüquqlar qorunur."
