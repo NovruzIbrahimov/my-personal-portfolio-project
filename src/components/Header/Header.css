@@ -16,8 +16,6 @@
   color: var(--bg-btn);
 }
 
-
-
 .header-left .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -89,7 +87,8 @@
   display: block;
   width: 100%;
   height: 3px;
-  background-color: var(--text-primary);
+  min-height: 3px;
+  background-color: var(--text-primary,#000);
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
   transform-origin: center;
@@ -147,7 +146,7 @@
   }
 
   .burger-btn span {
-    background-color: var(--text-primary);
+    background-color: var(--text-primary, #000);
   }
 }
 
