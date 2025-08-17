@@ -88,7 +88,7 @@
   width: 100%;
   height: 3px;
   min-height: 3px;
-  background-color:  var(--text-primary, #1a1a1a);
+  background-color:  #1a1a1a;
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
   transform-origin: center;
@@ -109,7 +109,7 @@
 }
 
 body.dark .burger-btn span {
-  background-color: var(--text-primary, #ffffff); 
+  background-color: #ffffff; 
 }
 
 @media (max-width: 768px) {
@@ -152,11 +152,11 @@ body.dark .burger-btn span {
   .burger-btn span {
     height: 3px;
     min-height: 3px;
-    background-color: var(--text-primary, #1a1a1a);
+    background-color: #1a1a1a;
   }
 
   body.dark .burger-btn span {
-    background-color: var(--text-primary, #ffffff);
+    background-color: #ffffff;
   }
 }
 
