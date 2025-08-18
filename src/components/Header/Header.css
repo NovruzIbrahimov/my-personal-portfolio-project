@@ -97,7 +97,9 @@
 
 
 .burger-btn.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  /* Bu sətirdə 5px dəyərlərini 7px ilə əvəz etmək, 
+     xətlərin tamamilə kəsişməsini təmin edir. */
+  transform: rotate(45deg) translate(7px, 7px);
 }
 
 .burger-btn.open span:nth-child(2) {
@@ -106,7 +108,8 @@
 }
 
 .burger-btn.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  /* Bu sətirdə də 5px dəyərlərini 7px ilə əvəz edin. */
+  transform: rotate(-45deg) translate(7px, -7px);
 }
 
 body.dark .burger-btn span {
@@ -174,7 +177,7 @@ body.dark .burger-btn span {
     background-color: #1a1a1a;
     border-radius: 2px;
     transition: all 0.3s ease-in-out;
-    transform-origin: center;
+     transform-origin: center;
     margin: 3px 0; /* Boşluğu azaltmaq üçün margin dəyərini azaldın */
     width: 100%;
   }
