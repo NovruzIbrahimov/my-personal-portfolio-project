@@ -69,9 +69,10 @@
 }
 
  .burger-btn {
-  display: none;
+  display: flex;
   width: 30px; /* Nümunə: Düyməyə en verin */
   height: 24px;
+  border-color: #e02b2b;
   /* flex-direction: column;
   justify-content: center;
   align-items: center; */
