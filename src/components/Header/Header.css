@@ -163,7 +163,7 @@ body.dark .burger-btn span {
 
 @media (max-width: 393px) {
   .burger-btn {
-    display: block;
+    display: flex;
     width: 22px;
     height: 22px;
     gap: 2px;
