@@ -2,8 +2,6 @@ import React, { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoClose } from "react-icons/io5";
 import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
