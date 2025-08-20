@@ -65,7 +65,10 @@
 .header-right {
   display: flex;
   align-items: center;
-  gap: 1rem;
+}
+
+.header-right > *:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 .burger-btn {
@@ -138,9 +141,13 @@ body.dark .burger-btn span {
     display: none !important;
   }
 
-  .header-right {
-    gap: 0.3rem;
+  .header-right > *:not(:last-child) {
+    margin-right: 0.2rem;
   }
+
+  /* .header-right {
+    gap: 0.3rem;
+  } */
 
   .burger-btn {
     display: flex;
@@ -175,7 +182,7 @@ body.dark .burger-btn span {
     width: 22px;
     height: 22px;
     gap: 2px;
-    padding-top: 5px;
+    padding-top: 6px;
   }
 
   .burger-btn span {
@@ -188,9 +195,13 @@ body.dark .burger-btn span {
     width: 100%;
   }
 
-  .header-right {
-    gap: 0.1rem;
+  .header-right > *:not(:last-child) {
+    margin-right: 0.2rem; 
   }
+
+  /* .header-right {
+    gap: 0.1rem;
+  } */
 
   .globe-btn {
     margin-right: -5px;
