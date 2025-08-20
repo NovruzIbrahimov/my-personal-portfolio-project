@@ -60,16 +60,22 @@ function Header() {
           </Link>
         </nav>
         <div className="header-right d-flex align-items-center">
-          <LanguageSwitcher />
-          <ThemeToggle />
-          <button
-            className={`burger-btn ${menuOpen ? "open" : ""}`}
-            onClick={toggleMenu}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+          <div className="header-right-item language-switcher">
+            <LanguageSwitcher />
+          </div>
+          <div className="header-right-item theme-toggle-wrapper">
+            <ThemeToggle />
+          </div>
+          <div className="header-right-item burger-wrapper">
+            <button
+              className={`burger-btn ${menuOpen ? "open" : ""}`}
+              onClick={toggleMenu}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
       </div>
     </header>
