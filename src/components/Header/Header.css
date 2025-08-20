@@ -65,15 +65,21 @@
 .header-right {
   display: flex;
   align-items: center;
+  gap: 0.8rem; /* Kompüter və tabletlər üçün standart aralıq */
+}
+
+/* .header-right {
+  display: flex;
+  align-items: center;
 }
 
 .header-right-item {
   margin-left: 0.5rem;
-}
+} */
 
-.header-right-item:first-child {
+/* .header-right-item:first-child {
   margin-left: 0;
-}
+} */
 
 .burger-btn {
   display: none;
@@ -129,6 +135,10 @@ body.dark .burger-btn span {
   .header-center {
     gap: 1rem;
   }
+
+  .header-right {
+    gap: 0.6rem; /* Tablet ekranları üçün aralıq */
+  }
 }
 
 @media (max-width: 425px) {
@@ -145,9 +155,13 @@ body.dark .burger-btn span {
     display: none !important;
   }
 
-  .header-right-item {
-    margin-left: 0.2rem;
+  .header-right {
+    gap: 0.2rem; /* Mobil telefonlar üçün ən kiçik aralıq */
   }
+
+  /* .header-right-item {
+    margin-left: 0.2rem;
+  } */
 
   .burger-btn {
     display: flex;
@@ -191,11 +205,15 @@ body.dark .burger-btn span {
     width: 100%;
   }
 
-  .header-right-item {
+  .header-right {
+    gap: 0.1rem;
+  }
+
+  /* .header-right-item {
     margin-left: 0.1rem;
   }
 
   .globe-btn {
     margin-right: -6px;
-  }
+  } */
 }
