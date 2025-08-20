@@ -21,6 +21,9 @@ function Home() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
+            whileHover={{ scale: 1.05, rotate: 2 }}
+            whileTap={{ scale: 0.95 }}
+            style={{ cursor: "pointer" }}
           >
             <img src={heroImg} alt="My Profile" className="profile-img" />
           </motion.div>
