@@ -8,6 +8,7 @@ import frontendGif from "../../assets/animations/homee1.gif";
 import frontendGif1 from "../../assets/animations/homee.gif";
 import frontendGif2 from "../../assets/animations/home2.gif";
 import { FaDownload } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Home() {
   const { t } = useTranslation();
@@ -50,9 +51,9 @@ function Home() {
                 <FaDownload className="me-2" />
                 {t("home.download")}
               </a>
-              <a href="/contact" className="contact-btn">
+              <Link to="/contact" className="contact-btn">
                 {t("home.contact")}
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>

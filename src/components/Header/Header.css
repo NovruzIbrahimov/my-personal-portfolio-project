@@ -163,6 +163,10 @@ body.dark .burger-btn span {
   body.dark .burger-btn span {
     background-color: #ffffff;
   }
+
+  .globe-btn {
+    margin-right: -5px;
+  }
 }
 
 @media (max-width: 393px) {
@@ -171,7 +175,7 @@ body.dark .burger-btn span {
     width: 22px;
     height: 22px;
     gap: 2px;
-    padding-top: 6px;
+    padding-top: 5px;
   }
 
   .burger-btn span {
@@ -186,5 +190,9 @@ body.dark .burger-btn span {
 
   .header-right {
     gap: 0.1rem;
+  }
+
+  .globe-btn {
+    margin-right: -5px;
   }
 }
