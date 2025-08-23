@@ -152,7 +152,7 @@ body.dark .burger-btn span {
   }
 
   .header-right > *:not(:last-child) {
-    margin-right: 0.1rem;
+    margin-right: -0.2rem;
   }
 
   /* .header-right {
@@ -202,7 +202,7 @@ body.dark .burger-btn span {
   }
 
   .header-right > *:not(:last-child) {
-    margin-right: 0.1rem;
+    margin-right: -0.2rem;
   }
 
   /* .header-right {
