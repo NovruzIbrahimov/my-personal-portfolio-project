@@ -62,11 +62,11 @@
   transform: scaleX(1);
 }
 
-/* .header-right {
+.header-right {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-} */
+}
 
 /* .header-right-item {
   margin: 0 !important;
@@ -199,10 +199,10 @@ body.dark .burger-btn span {
     width: 100%;
   }
 
- /*  .header-right {
-    display: flex; 
-    gap: 0.1rem !important;
-  }*/
+   .header-right {
+    /* display: flex;  */
+    /* gap: 0.1rem; */
+  }
 
   /* .header-right {
   display: flex;
