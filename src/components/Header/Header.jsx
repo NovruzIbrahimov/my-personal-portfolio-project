@@ -68,7 +68,7 @@ function Header() {
             {t("header.contact")}
           </Link>
         </nav>
-        <div className="header-right d-flex align-items-center">
+        <div className="header-right">
           <div className="header-right-item language-switcher">
             <LanguageSwitcher />
           </div>
