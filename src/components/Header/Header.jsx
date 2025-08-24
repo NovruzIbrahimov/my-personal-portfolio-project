@@ -50,7 +50,7 @@ function Header() {
 
   return (
     <header className={`custom-header ${theme}`}>
-      <div className="container d-flex justify-content-between align-items-center">
+      <div className="container d-flex align-items-center py-2">
         <Link to="/" className="header-left m-0" onClick={handleClick}>
           <h1 className="logo m-0">İbrahimov.dev</h1>
         </Link>
