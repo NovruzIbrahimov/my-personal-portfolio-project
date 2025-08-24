@@ -74,8 +74,8 @@ function Header() {
             
           </div>
           <div className="header-right-item theme-toggle-wrapper">
-            {/* <ThemeToggle /> */}
-            b
+             <ThemeToggle /> 
+            
           </div>
           <div className="header-right-item burger-wrapper">
             <button

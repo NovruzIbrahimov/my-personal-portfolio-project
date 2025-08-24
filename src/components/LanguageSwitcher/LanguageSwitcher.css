@@ -1,12 +1,25 @@
-/* .lang-switcher-wrapper {
+.lang-switcher-wrapper {
   position: relative;
   display: inline-flex;
   align-items: center;
 }
 
-.globe-btn {
+/* .globe-btn {
   background: none;
   border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: inherit;
+  transition: color 0.2s;
+} */
+.globe-btn {
+  /* Brauzerin default stillərini sıfırlayır */
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  
+  /* Sizin digər stilləriniz */
   cursor: pointer;
   font-size: 18px;
   color: inherit;
@@ -52,18 +65,4 @@
   margin-right: 8px;
   vertical-align: middle;
   border-radius: 2px;
-}
- */
-.globe-btn {
-  /* Brauzerin default stillərini sıfırlayır */
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  
-  /* Sizin digər stilləriniz */
-  cursor: pointer;
-  font-size: 18px;
-  color: inherit;
-  transition: color 0.2s;
 }
