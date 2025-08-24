@@ -147,9 +147,15 @@ body.dark .burger-btn span {
     display: none !important;
   }
 
+
   .header-right {
+    display: flex;
     gap: 0.1rem !important;
   }
+
+  .header-right-item:not(:last-child) {
+  margin-right: 0.1rem;
+}
 
   .burger-btn {
     display: flex;
@@ -200,7 +206,6 @@ body.dark .burger-btn span {
 
   .header-right-item:not(:last-child) {
   margin-right: 0.1rem;
-
 }
 }
 
