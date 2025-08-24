@@ -68,14 +68,14 @@ function Header() {
             {t("header.contact")}
           </Link>
         </nav>
-        <div className="header-right align-items-center">
+        <div className="header-right d-flex align-items-center">
           <div className="header-right-item language-switcher">
             <LanguageSwitcher />
           </div>
           <div className="header-right-item theme-toggle-wrapper">
             <ThemeToggle />
           </div>
-          {/* <div className="header-right-item burger-wrapper">
+          <div className="header-right-item burger-wrapper">
             <button
               className={`burger-btn ${menuOpen ? "open" : ""}`}
               onClick={toggleMenu}
@@ -84,7 +84,7 @@ function Header() {
               <span></span>
               <span></span>
             </button>
-          </div> */}
+          </div>
         </div>
       </div>
     </header>

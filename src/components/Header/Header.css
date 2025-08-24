@@ -157,16 +157,6 @@ body.dark .burger-btn span {
   margin-right: 0.1rem;
 } */
 
-.header-right {
-  display: flex !important;
-  gap: 0.1rem !important;
-}
-
-.header-right-item:not(:last-child) {
-  /* Sonuncu element xaricində hamısına sağdan məsafə veririk */
-  margin-right: 0.1rem;
-}
-
   .burger-btn {
     display: flex;
     width: 22px;
