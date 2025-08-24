@@ -199,6 +199,7 @@ body.dark .burger-btn span {
 
   .header-right-item:not(:last-child) {
   margin-right: 0.1rem;
+  
 }
 }
 
