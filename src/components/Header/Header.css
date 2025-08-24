@@ -208,4 +208,10 @@ body.dark .burger-btn span {
   margin-right: 0.1rem;
 } */
 }
+@media only screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) {
+  /* iPhone 14 Pro-ya xas stillər */
+  .header-right {
+    gap: 0.1rem; /* və ya digər dəyər */
+  }
+}
 
