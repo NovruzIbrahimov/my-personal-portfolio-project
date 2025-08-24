@@ -128,7 +128,7 @@ body.dark .burger-btn span {
     gap: 1rem;
   }
 
-   .header-right {
+  .header-right {
     gap: 0.6rem !important;
   }
 }
@@ -147,7 +147,7 @@ body.dark .burger-btn span {
     display: none !important;
   }
 
-/* 
+  /* 
   .header-right {
      display: flex; 
     gap: 0.1rem !important;
@@ -198,22 +198,4 @@ body.dark .burger-btn span {
     margin: 2px 0;
     width: 100%;
   }
-
-   .header-right {
-    /* display: flex;  */
-    /* gap: 0.1rem; */
-  }
-
-  /* .header-right {
-  display: flex;
 }
-
-.header-right-item:not(:last-child) {
-  margin-right: 0.1rem;
-} */
-
-  /* .header-right-item:not(:last-child) {
-  margin-right: 0.1rem;
-} */
-}
-

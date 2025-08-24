@@ -71,11 +71,9 @@ function Header() {
         <div className="header-right d-flex align-items-center">
           <div className="header-right-item language-switcher">
             <LanguageSwitcher />
-            
           </div>
           <div className="header-right-item theme-toggle-wrapper">
-             <ThemeToggle /> 
-            
+            <ThemeToggle />
           </div>
           <div className="header-right-item burger-wrapper">
             <button
