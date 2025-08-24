@@ -47,7 +47,11 @@ function Home() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             whileHover={{ scale: 1.05, rotate: 2 }}
-            whileTap={{ scale: 0.95 }}
+            whileTap={{
+              scale: 1.5,
+              rotate: 15,
+              transition: { type: "spring", stiffness: 300, damping: 15 },
+            }}
             style={{ cursor: "pointer" }}
           >
             <img src={heroImg} alt="My Profile" className="profile-img" />
