@@ -1,4 +1,4 @@
-.lang-switcher-wrapper {
+/* .lang-switcher-wrapper {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -20,8 +20,8 @@
 .lang-dropdown {
   position: absolute;
   top: 100%;
-  left: 50%; /* Dropdown-u sola 50% sürüşdürür */
-  transform: translateX(-50%); /* Öz eninin yarısı qədər geri sürüşdürərək mərkəzə gətirir */
+  left: 50%;
+  transform: translateX(-50%); 
   margin-top: 6px;
   background-color: white;
   border: 1px solid #ccc;
@@ -53,3 +53,4 @@
   vertical-align: middle;
   border-radius: 2px;
 }
+ */
