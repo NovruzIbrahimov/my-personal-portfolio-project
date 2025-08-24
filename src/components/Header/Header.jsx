@@ -50,7 +50,7 @@ function Header() {
 
   return (
     <header className={`custom-header ${theme}`}>
-      <div className="container d-flex align-items-center py-2">
+      <div className="container d-flex justify-content-between align-items-center py-2">
         <Link to="/" className="header-left m-0" onClick={handleClick}>
           <h1 className="logo m-0">İbrahimov.dev</h1>
         </Link>
@@ -70,10 +70,12 @@ function Header() {
         </nav>
         <div className="header-right d-flex align-items-center">
           <div className="header-right-item language-switcher">
-            <LanguageSwitcher />
+            {/* <LanguageSwitcher /> */}
+            a
           </div>
           <div className="header-right-item theme-toggle-wrapper">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
+            b
           </div>
           <div className="header-right-item burger-wrapper">
             <button
