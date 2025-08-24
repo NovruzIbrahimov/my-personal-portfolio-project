@@ -5,12 +5,14 @@ import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Loading from "../Loading/Loading";
 
 function Header() {
   const { theme } = useContext(ThemeContext);
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const { t } = useTranslation();
+  const [loading, setLoading] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen((prev) => {
@@ -39,23 +41,30 @@ function Header() {
     return () => window.removeEventListener("resize", handleResize);
   }, [menuOpen]);
 
+  const handleClick = () => {
+    setLoading(true);
+    setTimeout(() => setLoading(false), 500);
+  };
+
+  if (loading) return <Loading />;
+
   return (
     <header className={`custom-header ${theme}`}>
       <div className="container d-flex justify-content-between align-items-center py-2">
-        <Link to="/" className="header-left m-0">
+        <Link to="/" className="header-left m-0" onClick={handleClick}>
           <h1 className="logo m-0">İbrahimov.dev</h1>
         </Link>
         <nav className="header-center">
-          <Link to="/" className="nav-link">
+          <Link to="/" className="nav-link" onClick={handleClick}>
             {t("header.home")}
           </Link>
-          <Link to="/about" className="nav-link">
+          <Link to="/about" className="nav-link" onClick={handleClick}>
             {t("header.about")}
           </Link>
-          <Link to="/projects" className="nav-link">
+          <Link to="/projects" className="nav-link" onClick={handleClick}>
             {t("header.projects")}
           </Link>
-          <Link to="/contact" className="nav-link">
+          <Link to="/contact" className="nav-link" onClick={handleClick}>
             {t("header.contact")}
           </Link>
         </nav>

@@ -7,10 +7,12 @@ import { useTranslation } from "react-i18next";
 import furnitureImg from "../../assets/images/furniture.png";
 import bookImg from "../../assets/images/book.png";
 import portfolioImg from "../../assets/images/portfolio.png";
+import Loading from "../../components/Loading/Loading";
 
 function Projects() {
   const [showModal, setShowModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [loading, setLoading] = useState(false);
   const { t } = useTranslation();
 
   const projectData = [
@@ -20,7 +22,8 @@ function Projects() {
       description: t("projects.description-one"),
       image: furnitureImg,
       live: "https://example.com",
-      github: "https://github.com/NovruzIbrahimov/Furniture_ecommerce_project.git",
+      github:
+        "https://github.com/NovruzIbrahimov/Furniture_ecommerce_project.git",
     },
     {
       id: 2,
@@ -41,14 +44,32 @@ function Projects() {
   ];
 
   const handleOpenModal = (project) => {
-    setSelectedProject(project);
-    setShowModal(true);
+    setLoading(true);
+    setTimeout(() => {
+      setSelectedProject(project);
+      setShowModal(true);
+      setLoading(false);
+    }, 500);
   };
 
   const handleCloseModal = () => {
-    setSelectedProject(null);
-    setShowModal(false);
+    setLoading(true);
+    setTimeout(() => {
+      setSelectedProject(null);
+      setShowModal(false);
+      setLoading(false);
+    }, 500);
   };
+
+  const handleButtonClick = (url) => {
+    setLoading(true);
+    setTimeout(() => {
+      window.open(url, "_blank");
+      setLoading(false);
+    }, 500);
+  };
+
+  if (loading) return <Loading />;
 
   return (
     <div className="projects container py-5">
@@ -103,15 +124,13 @@ function Projects() {
             <Modal.Footer>
               <Button
                 variant="primary"
-                href={selectedProject.live}
-                target="_blank"
+                onClick={() => handleButtonClick(selectedProject.live)}
               >
                 {t("projects.modal-preview")}
               </Button>
               <Button
                 variant="dark"
-                href={selectedProject.github}
-                target="_blank"
+                onClick={() => handleButtonClick(selectedProject.github)}
               >
                 GitHub
               </Button>

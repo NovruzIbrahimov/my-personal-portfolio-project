@@ -3,10 +3,12 @@ import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { FaDownload } from "react-icons/fa";
 import "./Sidebar.css";
+import Loading from "../Loading/Loading";
 
 function Sidebar() {
   const { t } = useTranslation();
   const location = useLocation();
+  const [loading, setLoading] = useState(false);
   const [dateTime, setDateTime] = useState(new Date());
 
   useEffect(() => {
@@ -15,6 +17,13 @@ function Sidebar() {
     }, 1000);
     return () => clearInterval(timer);
   }, []);
+
+  const handleClick = () => {
+    setLoading(true);
+    setTimeout(() => setLoading(false), 500);
+  };
+
+  if (loading) return <Loading />;
 
   const day = String(dateTime.getDate()).padStart(2, "0");
   const month = String(dateTime.getMonth() + 1).padStart(2, "0");
@@ -37,6 +46,7 @@ function Sidebar() {
             className={`nav-link ${
               location.pathname === `/${page}` ? "active" : ""
             }`}
+            onClick={handleClick}
           >
             {t(`header.${page}`)}
           </Link>

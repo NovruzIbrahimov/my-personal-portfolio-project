@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
@@ -8,10 +8,34 @@ import frontendGif from "../../assets/animations/homee1.gif";
 import frontendGif1 from "../../assets/animations/homee.gif";
 import frontendGif2 from "../../assets/animations/home2.gif";
 import { FaDownload } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Loading from "../../components/Loading/Loading";
 
 function Home() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
+
+  const handleDownload = (url) => {
+    setLoading(true);
+    setTimeout(() => {
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "IbrahimovDeveloperResume.pdf";
+      link.click();
+      setLoading(false);
+    }, 500);
+  };
+
+  const handleNavigate = (path) => {
+    setLoading(true);
+    setTimeout(() => {
+      navigate(path);
+      setLoading(false);
+    }, 500);
+  };
+
+  if (loading) return <Loading />;
 
   return (
     <div className="home-page container">
@@ -44,16 +68,18 @@ function Home() {
 
             <div className="btn-group mt-4">
               <a
-                href="/IbrahimovDeveloperResume.pdf"
-                download
+                onClick={() => handleDownload("/IbrahimovDeveloperResume.pdf")}
                 className="cv-btn"
               >
                 <FaDownload className="me-2" />
                 {t("home.download")}
               </a>
-              <Link to="/contact" className="contact-btn">
+              <a
+                onClick={() => handleNavigate("/contact")}
+                className="contact-btn"
+              >
                 {t("home.contact")}
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>

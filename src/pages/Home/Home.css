@@ -39,6 +39,7 @@
 .btn-group {
   flex-wrap: wrap;
   gap: 15px;
+  cursor: pointer;
 }
 
 .cv-btn,
@@ -127,8 +128,8 @@
   }
 
   .btn-group {
-    flex-direction: row; 
-    flex-wrap: wrap; 
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
