@@ -62,16 +62,16 @@
   transform: scaleX(1);
 }
 
-.header-right {
+/* .header-right {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-}
+} */
 
-.header-right-item {
+/* .header-right-item {
   margin: 0 !important;
   padding: 0 !important;
-}
+} */
 
 .burger-btn {
   display: none;
@@ -128,9 +128,9 @@ body.dark .burger-btn span {
     gap: 1rem;
   }
 
-  .header-right {
+  /* .header-right {
     gap: 0.6rem !important;
-  }
+  } */
 }
 
 @media (max-width: 425px) {
@@ -147,11 +147,11 @@ body.dark .burger-btn span {
     display: none !important;
   }
 
-
+/* 
   .header-right {
-    /* display: flex; */
+     display: flex; 
     gap: 0.1rem !important;
-  }
+  } */
 
   /* .header-right-item:not(:last-child) {
   margin-right: 0.1rem;
@@ -199,19 +199,21 @@ body.dark .burger-btn span {
     width: 100%;
   }
 
-  .header-right {
-    /* display: flex; */
+ /*  .header-right {
+    display: flex; 
     gap: 0.1rem !important;
-  }
+  }*/
+
+  /* .header-right {
+  display: flex;
+}
+
+.header-right-item:not(:last-child) {
+  margin-right: 0.1rem;
+} */
 
   /* .header-right-item:not(:last-child) {
   margin-right: 0.1rem;
 } */
-}
-@media only screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) {
-  /* iPhone 14 Pro-ya xas stillər */
-  .header-right {
-    gap: 0.1rem; /* və ya digər dəyər */
-  }
 }
 
