@@ -46,7 +46,7 @@ function Home() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            whileHover={{ scale: 1.05, rotate: 2 }}
+            whileHover={{ scale: 1.1, rotate: 10 }}
             whileTap={{
               scale: 1.5,
               rotate: 15,
