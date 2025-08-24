@@ -65,7 +65,7 @@ function Home() {
             transition={{ duration: 1 }}
           >
             <h1 className="greeting">
-              {t("home.greeting")} <span className="highlight">Novrruz</span>
+              {t("home.greeting")} <span className="highlight">Novrrruz</span>
             </h1>
             <h2 className="title">Frontend Developer</h2>
             <p className="subtitle">{t("home.subtitle")}</p>
