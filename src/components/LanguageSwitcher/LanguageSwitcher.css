@@ -20,7 +20,8 @@
 .lang-dropdown {
   position: absolute;
   top: 100%;
-  right: 0;
+  left: 50%; /* Dropdown-u sola 50% sürüşdürür */
+  transform: translateX(-50%); /* Öz eninin yarısı qədər geri sürüşdürərək mərkəzə gətirir */
   margin-top: 6px;
   background-color: white;
   border: 1px solid #ccc;
