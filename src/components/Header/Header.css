@@ -194,12 +194,13 @@ body.dark .burger-btn span {
   }
 
   .header-right {
+    display: flex;
     gap: 0.1rem !important;
   }
 
   .header-right-item:not(:last-child) {
   margin-right: 0.1rem;
-  
+
 }
 }
 
