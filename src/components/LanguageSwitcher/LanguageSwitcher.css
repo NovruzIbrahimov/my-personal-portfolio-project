@@ -54,3 +54,16 @@
   border-radius: 2px;
 }
  */
+.globe-btn {
+  /* Brauzerin default stillərini sıfırlayır */
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  
+  /* Sizin digər stilləriniz */
+  cursor: pointer;
+  font-size: 18px;
+  color: inherit;
+  transition: color 0.2s;
+}
