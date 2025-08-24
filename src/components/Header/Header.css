@@ -149,7 +149,7 @@ body.dark .burger-btn span {
 
 
   .header-right {
-    display: flex;
+    /* display: flex; */
     gap: 0.1rem !important;
   }
 
