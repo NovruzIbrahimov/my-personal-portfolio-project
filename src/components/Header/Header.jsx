@@ -70,8 +70,8 @@ function Header() {
         </nav>
         <div className="header-right d-flex align-items-center">
           <div className="header-right-item language-switcher">
-            {/* <LanguageSwitcher /> */}
-            a
+            <LanguageSwitcher />
+            
           </div>
           <div className="header-right-item theme-toggle-wrapper">
             {/* <ThemeToggle /> */}
