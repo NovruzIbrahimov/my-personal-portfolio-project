@@ -65,7 +65,7 @@
 .header-right {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 1rem;
 }
 
 /* .header-right-item {
@@ -128,9 +128,9 @@ body.dark .burger-btn span {
     gap: 1rem;
   }
 
-  /* .header-right {
+   .header-right {
     gap: 0.6rem !important;
-  } */
+  }
 }
 
 @media (max-width: 425px) {
