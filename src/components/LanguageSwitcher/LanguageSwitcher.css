@@ -4,22 +4,11 @@
   align-items: center;
 }
 
-/* .globe-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  color: inherit;
-  transition: color 0.2s;
-} */
 .globe-btn {
-  /* Brauzerin default stillərini sıfırlayır */
   background: none;
   border: none;
   padding: 0;
   margin: 0;
-  
-  /* Sizin digər stilləriniz */
   cursor: pointer;
   font-size: 18px;
   color: inherit;
@@ -34,7 +23,7 @@
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
   margin-top: 6px;
   background-color: white;
   border: 1px solid #ccc;

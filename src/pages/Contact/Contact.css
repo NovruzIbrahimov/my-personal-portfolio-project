@@ -136,16 +136,6 @@
   }
 }
 
-/* @media (max-width: 425px) {
-  .contact-gif {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-  }
-} */
-
 @media (max-width: 425px) {
   .contact h2 {
     font-size: 1.5rem;

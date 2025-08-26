@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import "./Sidebar.css";
 import Loading from "../Loading/Loading";
 
