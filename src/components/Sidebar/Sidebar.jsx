@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { FaDownload, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import "./Sidebar.css";
 import Loading from "../Loading/Loading";
+import sidebarGif from "../../assets/animations/homee1.gif";
 
 function Sidebar() {
   const { t } = useTranslation();
@@ -56,6 +57,10 @@ function Sidebar() {
       <div className="datetime-box d-flex justify-content-center gap-3 my-3 mt-5">
         <div className="calendar-box shadow-sm px-2 py-1">{formattedDate}</div>
         <div className="clock-box px-2 py-1">{formattedTime}</div>
+      </div>
+
+      <div className="sidebar-gif text-center my-3 mt-5">
+        <img src={sidebarGif} alt="Coding animation" className="gif-img-gif" />
       </div>
 
       <div className="text-center mt-5">

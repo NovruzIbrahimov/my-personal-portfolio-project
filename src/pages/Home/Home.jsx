@@ -8,7 +8,7 @@ import frontendGif from "../../assets/animations/homee1.gif";
 import frontendGif1 from "../../assets/animations/homee.gif";
 import frontendGif2 from "../../assets/animations/home2.gif";
 import { FaDownload } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Loading from "../../components/Loading/Loading";
 
 function Home() {
